@@ -1,0 +1,116 @@
+import React from 'react';
+import { Github, Linkedin, Mail, Phone } from 'lucide-react';
+
+const Portfolio = () => {
+  return (
+    <div className="min-h-screen bg-gray-50">
+      {/* Hero Section */}
+      <div className="bg-blue-900 text-white py-16">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="flex flex-col md:flex-row items-center gap-8 mb-6">
+            <img 
+              src="/api/placeholder/200/200" 
+              alt="Vyshak K Iyengar" 
+              className="rounded-full w-48 h-48 object-cover border-4 border-white"
+            />
+            <div>
+              <h1 className="text-4xl font-bold mb-4">Vyshak K Iyengar</h1>
+              <p className="text-xl mb-6">MBA Candidate at London Business School | Co-founder at Blufin Foundation</p>
+              <div className="flex space-x-4">
+                <a href="mailto:vyshakiyengar@gmail.com" className="flex items-center gap-2">
+                  <Mail size={20} /> <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vyshakiyengar" className="flex items-center gap-2">
+                  <Linkedin size={20} /> <span>LinkedIn</span>
+                </a>
+                <span className="flex items-center gap-2">
+                  <Phone size={20} /> <span>+91 7259140866</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Content */}
+      <div className="max-w-4xl mx-auto px-6 py-12">
+        {/* Summary */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-4">Summary</h2>
+          <p className="text-gray-700 leading-relaxed">
+            Computer Science Engineer and MBA candidate at London Business School with expertise in strategy, consulting, and startups. Recent experience includes developing national AI cybersecurity strategy at BCG Dubai and scaling Blufin Foundation into a globally recognized NGO. Skilled in technology strategy, venture capital, and impact-driven growth.
+          </p>
+        </section>
+
+        {/* Experience */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Experience</h2>
+          <div className="space-y-8">
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Growth Partner - MBA Intern</h3>
+              <p className="text-gray-600">London Area, United Kingdom | January 2025 - Present</p>
+              <p className="mt-2">Collaborating with HomeServe founder Richard Harpin on scaling strategies.</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Summer Consultant - Boston Consulting Group (BCG)</h3>
+              <p className="text-gray-600">Dubai, UAE | July 2024 - September 2024</p>
+              <p className="mt-2">Developed national AI cybersecurity strategy for Middle Eastern government.</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Co-Founder & Trustee - BluFin Foundation</h3>
+              <p className="text-gray-600">Bengaluru, India | November 2018 - Present</p>
+              <p className="mt-2">Scaled organization to international recognition, securing funding from Accel Partners and Kaleyra. Trained 107 underprivileged children in swimming, with 36 reaching state-level championships.</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Strategy Consultant - Accenture Strategy</h3>
+              <p className="text-gray-600">Bengaluru, India | November 2020 - August 2023</p>
+              <p className="mt-2">Led strategic initiatives for Fortune 500 clients, focusing on technology strategy and digital transformation.</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Co-Founder - Cookie-Jar</h3>
+              <p className="text-gray-600">Bengaluru, India | October 2016 - May 2018</p>
+              <p className="mt-2">Created an entrepreneurship platform hosting over 1,000 participants, featuring Forbes-recognized speakers and venture fund managers. Partnered with NSRCEL at IIM Bangalore and other prominent organizations.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* Education */}
+        <section className="mb-12">
+          <h2 className="text-2xl font-bold mb-6">Education</h2>          <div className="space-y-8">
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">London Business School</h3>
+              <p className="text-gray-600">Master of Business Administration (MBA)</p>
+              <p className="text-gray-600">2023 - 2025</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Visvesvaraya Technological University</h3>
+              <p className="text-gray-600">Bachelor of Engineering (BE), Computer Science</p>
+              <p className="text-gray-600">2013 - 2017</p>
+            </div>
+
+            <div className="border-l-4 border-blue-900 pl-4">
+              <h3 className="font-bold">Kumaran's PU College</h3>
+              <p className="text-gray-600">Pre-University, Electronics</p>
+              <p className="text-gray-600">2011 - 2013</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Footer */}
+      <footer className="bg-gray-100 py-6">
+        <div className="max-w-4xl mx-auto px-6 text-center text-gray-600">
+          <p>© 2025 Vyshak K Iyengar. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default Portfolio;
+
